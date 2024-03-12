@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myText {
+            transition: opacity 0.5s;
+        }
+        #myText.hidden {
+            opacity: 0;
+        }
+        #myText:hover {
+            opacity: 1 !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test</h1>
+    <button id="changeButton">Press to change text</button>
+    <p id="myText">This text is optional.</p>
+    <button onclick="alert('xin meo meo meo')">Meo</button>
+    <script src="./HW3.js"></script>
+</body>
+</html>
