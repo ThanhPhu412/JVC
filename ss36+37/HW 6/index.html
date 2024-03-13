@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Quản lý sinh viên</h1>
+    <form id="studentForm">
+        Student Id: <input type="text" id="studentId" required pattern=".{6,6}" title="StudentId phải có 6 kí tự"><br>
+        Student Name: <input type="text" id="studentName" required title="Tên sinh viên không nên để trống"><br>
+        Age: <input type="number" id="age" min="18" required title="Tuổi phải lớn hơn hoặc bằng 18"><br>
+        Phone: <input type="tel" id="phone" pattern="^\+84\d{9,10}$" required title="Điện thoại phải ở định dạng số điện thoại VN"><br>
+        Email: <input type="email" id="email" required title="Email phải ở định dạng email"><br>
+        <input type="submit" value="Create">
+    </form>
+    <div id="studentInfo"></div>
+    <div id="studentInfo"></div>
+    <script src="./HW6.js"></script>
+</body>
+
+</html>
