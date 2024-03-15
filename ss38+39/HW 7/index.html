@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #333;
+          color: #fff;
+          text-align: center;
+          padding: 50px;
+        }
+        .container {
+          margin-top: 50px;
+        }
+        .password-generator {
+          margin-bottom: 20px;
+        }
+        .options {
+          margin: 10px 0;
+        }
+        .button {
+          background-color: #3498db;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          margin-top: 20px;
+          cursor: pointer;
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <div class="password-generator">
+          <input type="text" id="passwordOutput" readonly>
+          <button onclick="copyPassword()" class="button">Copy</button>
+        </div>
+        <div class="options">
+          <label><input type="checkbox" id="uppercase"> Include uppercase letters</label>
+          <label><input type="checkbox" id="lowercase"> Include lowercase letters</label>
+          <label><input type="checkbox" id="numbers"> Include numbers</label>
+          <label><input type="checkbox" id="symbols"> Include symbols</label>
+        </div>
+        <div>
+          <button onclick="generatePassword()" class="button">Generate Password</button>
+        </div>
+      </div>
+    <script src="./HW7.js"></script>
+</body>
+</html>

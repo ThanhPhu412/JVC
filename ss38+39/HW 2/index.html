@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+      #search-container {
+            width: 0px;
+            height: 30px;
+            background-color: rgb(87, 0, 128);
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: width 0.5s ease-in-out;
+           
+        }
+
+        #search-container.expanded {
+            width: 300px;
+        }
+
+        #search-icon {
+            color: rgb(10, 1, 1);
+            font-size: 20px;
+        }
+
+        #search-bar {
+            flex-grow: 1;
+            font-size: 16px;
+            color: rgb(0, 0, 0); 
+            background-color: white; 
+            border: none;
+            outline: none;
+            transition: opacity 0.5s ease-in-out;
+            opacity: 0;
+           
+        }
+
+        #search-container.expanded #search-bar {
+            opacity: 1;
+        }
+        #search-bar::placeholder {
+            color: rgb(87, 0, 128);
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/777a796ac3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="search-container" onclick="expandSearch()">
+        <input type="text" id="search-bar" placeholder="Search...">
+        <span id="search-icon"><i class="fas fa-search"></i></span>
+        <script src="./HW2.js"></script>
+    </body>
+</html>

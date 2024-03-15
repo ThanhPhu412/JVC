@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background: url('https://cdn.discordapp.com/attachments/1166646168730738739/1217789861667278898/image.png?ex=66054e30&is=65f2d930&hm=1f75e0a2cbc73fc2f61ad458073e9595e168ceb22dbac3701bdb183fcbeba044&') no-repeat center center fixed; 
+            background-size: cover;
+        }
+
+        #loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3em;
+            color: white;
+            opacity: 0;
+            transition: opacity 2s;
+        }
+
+        #loading.complete {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test</h1>
+    <div id="loading">0%</div>
+    <script src="./HW3.js"></script>
+</body>
+</html>

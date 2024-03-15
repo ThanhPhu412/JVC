@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f4;
+          color: #333;
+          text-align: center;
+          padding: 20px;
+        }
+        .container {
+          margin-top: 30px;
+        }
+        input[type="number"] {
+          width: 200px;
+          padding: 10px;
+          margin: 10px;
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Weight Converter</h2>
+        <input type="number" id="pounds" placeholder="Pounds" oninput="convertFromPounds(this.value)">
+        <input type="number" id="kilograms" placeholder="Kilograms" oninput="convertFromKilograms(this.value)">
+        <input type="number" id="ounces" placeholder="Ounces" oninput="convertFromOunces(this.value)">
+      </div>
+    <script src="./HW8.js"></script> 
+</body>
+</html>

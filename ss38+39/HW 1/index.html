@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .step-nav {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            width: 300px;
+            padding: 0;
+        }
+
+        .step-nav li {
+            width: 50px;
+            height: 50px;
+            background-color: grey;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.5s;
+        }
+
+        .step-nav li.active {
+            background-color: green;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+
+        button:disabled {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <ul class="step-nav" id="stepNav">
+        <li class="active">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <button id="prevBtn" disabled>Prev</button>
+    <button id="nextBtn">Next</button>
+
+    <script src="./HW 1.js"></script>
+</body>
+</html>
