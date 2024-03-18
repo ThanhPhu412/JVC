@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quản Lý Dự Án</title>
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  table, th, td {
+    border: 1px solid black;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  .btn {
+    padding: 5px 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .btn-delete {
+    background-color: red;
+    color: white;
+  }
+  .btn-update {
+    background-color: green;
+    color: white;
+  }
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Tên Dự Án</th>
+    <th>URL Hình Ảnh</th>
+    <th>Liên Kết</th>
+    <th>Thẻ</th>
+    <th>Hành Động</th>
+  </tr>
+  <tr>
+    <td>Auto Drive Project</td>
+    <td><a href="#">Hình Ảnh</a></td>
+    <td><a href="#">Link</a></td>
+    <td>Angular React Jquery</td>
+    <td>
+      <button class="btn btn-delete">Xóa</button>
+      <button class="btn btn-update">Cập Nhật</button>
+    </td>
+  </tr>
+  <!-- Thêm các dòng cho các dự án khác tương tự như trên -->
+</table>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Bootstrap Layout</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .column {
+            width: calc(50% - 15px);
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .thumbnail-container {
+            text-align: center;
+        }
+
+        .thumbnail-container img {
+            max-width: 100%;
+            height: auto;
+            display: inline-block;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .column {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <div class="thumbnail-container">
+            </div>
+            <h2>World</h2>
+            <h3>Featured post</h3>
+            <p>Nov 12</p>
+            <img src="https://via.placeholder.com/150" alt="Thumbnail 1">
+            <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            <p><a href="#" class="btn btn-primary">Continue reading</a></p>
+        </div>
+        <div class="column">
+            <div class="thumbnail-container">
+            </div>
+            <h2>Design</h2>
+            <h3>Post title</h3>
+            <p>Nov 11</p>
+            <img src="https://via.placeholder.com/150" alt="Thumbnail 2">
+            <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            <p><a href="#" class="btn btn-primary">Continue reading</a></p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
